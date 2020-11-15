@@ -12,11 +12,11 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM guestbook002');
 ?>
-<table class="center" width="600" border="1" style="color: #f0ffff; background-color: #88d373;">
+<table class="center" width="600" border="1" style="color: #f0ffff; background-color: #a0c564;>
   <tr>
-    <th width="150"> <div align="center">Name</div></th>
-    <th width="300"> <div align="center">Comment </div></th>
-    <th width="150"> <div align="center">Link </div></th>
+    <th width="150", style="color: #f0ffff; background-color: #74b164;"> <div align="center">Name</div></th>
+    <th width="300", style="color: #f0ffff; background-color: #88d373;"> <div align="center">Comment </div></th>
+    <th width="150", style="color: #f0ffff; background-color: #74b164;"> <div align="center">Action</div></th>
   </tr>
 <?php
 while($Result = mysqli_fetch_array($res))
