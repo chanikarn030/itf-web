@@ -23,9 +23,9 @@ while($Result = mysqli_fetch_array($res))
 {
 ?>
   <tr>
-    <td><?php echo $Result['Name'];?></div></td>
-    <td><?php echo $Result['Comment'];?></td>
-    <td><?php echo $Result['Link'];?></td>
+    <td width="300", style="color: #f0ffff; background-color: #88d373;"><?php echo $Result['Name'];?></div></td>
+    <td width="150", style="color: #f0ffff; background-color: #74b164;"><?php echo $Result['Comment'];?></td>
+    <td width="300", style="color: #f0ffff; background-color: #88d373;"><?php echo $Result['Link'];?></td>
   </tr>
 <?php
 }
