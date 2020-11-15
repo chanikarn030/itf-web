@@ -2,6 +2,9 @@
 <head>
 <title>ITF Lab</title>
 </head>
+<style>
+    th, td {padding: 6px;}
+</style>
 <body>
 <?php
 $conn = mysqli_init();
