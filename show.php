@@ -26,7 +26,7 @@ while($Result = mysqli_fetch_array($res))
 {
 ?>
   <tr>
-    <td width="300" style="background-color: #fabcb6><?php echo $Result['Name'];?></div></td>
+    <td width="300" style="background-color: #fabcb6"><?php echo $Result['Name'];?></div></td>
     <td width="150" style="background-color: #fabcb6"><?php echo $Result['Comment'];?></td>
     <td width="300" style="background-color: #fabcb6"><div align="center">
         <input type="button" value="Delete" style="padding: 3.5%; background-color: tomato; border-width: 0cm; color:white">
