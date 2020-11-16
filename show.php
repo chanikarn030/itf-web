@@ -28,7 +28,7 @@ while($Result = mysqli_fetch_array($res))
   <tr>
     <td width="300"><?php echo $Result['Name'];?></div></td>
     <td width="150"><?php echo $Result['Comment'];?></td>
-    <td width="300"><?php echo $Result['Link'];?></td>
+    <td width="300"><input class="button" value="Delete"></td>
   </tr>
 <?php
 }
