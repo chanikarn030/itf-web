@@ -36,7 +36,7 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
-<button type="button" style="padding: 8px; border-width: 0cm; background-color: lightsalmon; color: white;">ADD</button>
+<button type="button" style="padding: 8px; border-width: 0cm; background-color: lightsalmon; color: white;"><strong>ADD</strong></button>
 <?php
 mysqli_close($conn);
 ?>
