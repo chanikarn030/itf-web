@@ -4,6 +4,12 @@
 </head>
 <style>
     th, td {padding: 6px; border-inline-end: 0cm; border-bottom: 0cm; border-top: 0cm; border-inline-start: 0cm;}
+    .center1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 640px;
+    height: 100px}
 </style>
 <body>
 <?php
@@ -36,8 +42,7 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
-<button type="button" style="padding: 8px; border-width: 0cm; background-color: lightsalmon; color: white;"><strong>ADD</strong></button>
-<?php
+<div class="center1"><button type="button" style="padding: 8px; border-width: 0cm; background-color: lightsalmon; color: white;"><strong>ADD</strong></button></div><?php
 mysqli_close($conn);
 ?>
 </body>
