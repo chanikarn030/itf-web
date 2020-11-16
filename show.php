@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 640px;
+    width: 585px;
     height: 100px}
 </style>
 <body>
