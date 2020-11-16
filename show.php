@@ -42,7 +42,7 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
-<div class="center1"><button type="button" style="padding: 8px; border-width: 0cm; background-color: lightsalmon; color: white;"><strong>ADD</strong></button></div><?php
+<div class="center1"><button type="button" style="padding: 12px; border-width: 0cm; background-color: lightsalmon; color: white; border-radius: 12px;"><strong>ADD</strong></button></div><?php
 mysqli_close($conn);
 ?>
 </body>
