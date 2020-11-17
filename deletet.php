@@ -7,11 +7,9 @@ if (mysqli_connect_errno($conn))
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
 
-$name = $_POST['Name'];
-$comment = $_POST['Comment'];
-$link = $_POST['Link'];
+$id = $_POST['ID'];
 
-$sql = "DELETE FROM guestbook002 WHERE ID='".$_GET["ID"]."'";
+$sql = "DELETE FROM guestbook002 WHERE ID='$id'";
 $query = mysqli_query($itflab, $sql);
 
 echo "<a href=\"show.php\">BACK</a>";
