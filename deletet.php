@@ -1,7 +1,9 @@
 <?php
 
-if ( $_GET["ID"]) {
-    $ID = $_GET['ID'];
+$conn = mysqli_init();
+mysqli_real_connect($conn, 'dataitf.mysql.database.azure.com', 'laize@dataitf', '08032545Pu', 'itflab', 3306);
+if ( $_GET['ID']) {
+    $ID = $_GET["ID"];
 } else {
     echo "ID not found.";
     die();
