@@ -13,3 +13,4 @@ $sql = "DELETE FROM 'guestbook002' WHERE ID = {$ID}";
 $query = mysqli_query($itflab, $sql);
 
 echo "<a href=\"show.php\">BACK</a>";
+?>
