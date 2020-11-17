@@ -17,7 +17,8 @@ $sql = "INSERT INTO guestbook002 (Name , Comment , Link) VALUES ('$name', '$comm
 
 
 if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
+    echo"New record created successfully";
+    echo"<a href=\"show.php\">BACK</a>";
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
