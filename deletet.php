@@ -10,6 +10,7 @@ if (mysqli_connect_errno($conn))
 $id = $_POST['ID'];
 
 $sql = "DELETE FROM guestbook002 WHERE ID='$id'";
+$query = mysqli_query($conn, $sql);
 
 if (mysqli_query($conn, $sql)) {
     echo "You delete successfully";
