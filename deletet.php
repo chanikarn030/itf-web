@@ -3,7 +3,7 @@
 include('connection.php');
 $ID = $_REQUEST["ID"];
 
-$sql = "DELETE FROM tb_member WHERE ID='$ID' ";
+$sql = "DELETE FROM guestbook002 WHERE ID='$ID' ";
 $result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error());
 
 echo "<a href=\"show.php\">BACK</a>";
