@@ -43,8 +43,7 @@ while($Result = mysqli_fetch_array($res))
 ?>
 </table>
 <form action = "delete.php" method = "post" id="Delete">
-  <div class="center1"><input type="submit" id="deletedata" style="padding: 12px; border-width: 0cm; background-color: lightsalmon; color: white; border-radius: 12px;" value="ADD"></div>
-</form>
+<div class="center1"><button type="button" style="padding: 12px; border-width: 0cm; background-color: lightsalmon; color: white; border-radius: 12px;" onclick="document.location='form.html'"><strong>ADD</strong></button></div>
 <?php
 mysqli_close($conn);
 ?>
