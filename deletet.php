@@ -1,5 +1,4 @@
 <?php
-
 $conn = mysqli_init();
 mysqli_real_connect($conn, 'dataitf.mysql.database.azure.com', 'laize@dataitf', '08032545Pu', 'itflab', 3306);
 if (mysqli_connect_errno($conn))
@@ -8,14 +7,16 @@ if (mysqli_connect_errno($conn))
 }
 
 $id = $_GET['id'];
-echo "$id";
-$sql = "DELETE FROM guestbook002 WHERE id = $id";;
+
+$sql = "DELETE FROM guestbook WHERE id = $id";
+
 
 if (mysqli_query($conn, $sql)) {
     echo "Delete Succesfully";
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
-
+  
+mysqli_close($conn);
 echo "<a href=\"show.php\">BACK</a>";
 ?>
