@@ -21,10 +21,11 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM guestbook002');
 ?>
-<table class="center" width="600" border="1">
+<table class="center" width="750" border="1">
   <tr>
-    <th width="150" style="color: #f0ffff; background-color: lightcoral;"><div align="center">Name</div></th>
-    <th width="300" style="color: #f0ffff; background-color: salmon;"><div align="center">Comment </div></th>
+    <th width="150" style="color: #f0ffff; background-color: salmon;"><div align="center">Name</div></th>
+    <th width="300" style="color: #f0ffff; background-color: lightcoral;"><div align="center">Comment</div></th>
+    <th width="150" style="color: #f0ffff; background-color: salmon;"><div align="center">Link</div></th>
     <th width="150" style="color: #f0ffff; background-color: lightcoral;"><div align="center">Action</div></th>
   </tr>
 <?php
@@ -32,10 +33,11 @@ while($Result = mysqli_fetch_array($res))
 {
 ?>
   <tr>
-    <td width="300" style="background-color: #f8c6ce"><?php echo $Result['Name'];?></div></td>
-    <td width="150" style="background-color: #fabcb6"><?php echo $Result['Comment'];?></td>
+    <td width="300" style="background-color: #fabcb6"><?php echo $Result['Name'];?></div></td>
+    <td width="150" style="background-color: #f8c6ce"><?php echo $Result['Comment'];?></td>
+    <td width="150" style="background-color: #fabcb6"><?php echo $Result['Link'];?></td>
     <td width="300" style="background-color: #f8c6ce"><div align="center">
-        <input type="button" value="Delete" style="padding: 3.5%; background-color: tomato; border-width: 0cm; color:white" onclick="document.location='deletet.php?id=$row[ID]'">
+        <input type="button" value="Delete" style="padding: 3.5%; background-color: tomato; border-width: 0cm; color:white" <a href="deletet.php?id=$_GET['ID']"</a>>
         <input type="button" value="Edit" style="padding: 3.5%; background-color: tomato; border-width: 0cm; color:white">
   </tr>
 <?php
