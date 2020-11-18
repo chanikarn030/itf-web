@@ -1,14 +1,19 @@
 <html>
 <head>
 <title>ITF Lab</title>
-
+  <!--<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
 </head>
 <style>
     body{
-        background-color: rgb(230, 175, 198);
+        background-color: rgb(224, 176, 195);
     }
     th, td {
-        padding: 7px; border: 0cm;
+        padding: 13px; border-bottom-width: 5cm;
     }
 </style>
 <body>
@@ -37,13 +42,14 @@ while($Result = mysqli_fetch_array($res))
     <td style="background-color: #f8c6ce"><?php echo $Result['Comment'];?></td>
     <td style="background-color: #fabcb6"><?php echo $Result['Link'];?></td>
     <td style="background-color: #f8c6ce"><div align="center">
-        <button type="submit" style="padding: 3.5%; background-color: tomato; border-width: 0cm; color:white; border-radius: 9px;"><a href="deletet.php?id=<?=$Result['id'];?>">Delete</a></button></td>
+        <button type="submit" style="padding: 5%; background-color: tomato; border-width: 0cm; color:white; border-radius: 6px;"><a href="deletet.php?id=<?=$Result['id'];?>" style="color: white; text-decoration: none;"><strong>Delete</strong></a></button>
+        <button type="submit" style="padding: 5%; background-color: tomato; border-width: 0cm; color:white; border-radius: 6px;"><a href="deletet.php?id=<?=$Result['id'];?>">Edit</a></button></td>
   </tr>
 <?php
 }
 ?>
 </table>
-<div align="center"><button type="button" style="margin-top: 23px; padding: 12px; border-width: 0cm; background-color: lightsalmon; color: white; border-radius: 12px;" onclick="document.location='form.html'"><strong>ADD</strong></button></div>
+<div align="center"><button type="button" style="cursor: pointer; margin-top: 23px; padding: 12px; border-width: 0cm; background-color: lightsalmon; color: white; border-radius: 12px;" onclick="document.location='form.html'"><strong>ADD</strong></button></div>
 <?php
 mysqli_close($conn);
 ?>
