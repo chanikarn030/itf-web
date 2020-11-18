@@ -1,6 +1,12 @@
 <html>
 <head>
 <title>ITF Lab</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <style>
     th, td {padding: 6px; border-inline-end: 0cm; border-bottom: 0cm; border-top: 0cm; border-inline-start: 0cm;}
@@ -35,9 +41,9 @@ while($Result = mysqli_fetch_array($res))
   <tr>
     <td width="300" style="background-color: #fabcb6"><?php echo $Result['Name'];?></div></td>
     <td width="150" style="background-color: #f8c6ce"><?php echo $Result['Comment'];?></td>
-    <td width="150" style="background-color: #fabcb6"><?php echo $Result['Link'];?></td>
+    <td width="150" style="background-color: #fabcb6"><?php echo $Result['id'];?></td>
     <td width="300" style="background-color: #f8c6ce"><div align="center">
-        <button type="submit" style="padding: 3.5%; background-color: tomato; border-width: 0cm; color:white"><a href="deletet.php?id=<?=$_GET['id'];?>">Delete</a>
+        <button type="submit" style="padding: 3.5%; background-color: tomato; border-width: 0cm; color:white"><a href="deletet.php?id=<?=$_GET['id'];?>">Delete</a></button>
   </tr>
 <?php
 }
