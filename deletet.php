@@ -19,4 +19,5 @@ if (mysqli_query($conn, $sql)) {
   
 mysqli_close($conn);
 echo "<a href=\"show.php\">BACK</a>";
+echo $Result['id'];
 ?>
