@@ -37,7 +37,7 @@ while($Result = mysqli_fetch_array($res))
     <td width="150" style="background-color: #f8c6ce"><?php echo $Result['Comment'];?></td>
     <td width="150" style="background-color: #fabcb6"><?php echo $Result['Link'];?></td>
     <td width="300" style="background-color: #f8c6ce"><div align="center">
-        <a href="deletet.php?id=$_GET['ID']" class="button" style="padding: 3.5%; background-color: tomato; border-width: 0cm; color:white">Delete</a>
+        <button type="submit" style="padding: 3.5%; background-color: tomato; border-width: 0cm; color:white"><a href="deletet.php?id=<?=$_GET['ID'];?>">Delete</a>
         <input type="button" value="Edit" style="padding: 3.5%; background-color: tomato; border-width: 0cm; color:white">
   </tr>
 <?php
