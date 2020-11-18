@@ -9,14 +9,13 @@ if (mysqli_connect_errno($conn))
 
 $id = $_GET['id'];
 
-$sql = "DELETE FROM guestbook002 WHERE id = $id";
-$query = mysqli_query($conn, $sql);
+$sql = "DELETE FROM guestbook002 WHERE id = $id";;
 
 if (mysqli_query($conn, $sql)) {
-    echo "You delete successfully";
+    echo "Delete Succesfully";
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-}
+  }
 
 echo "<a href=\"show.php\">BACK</a>";
 ?>
