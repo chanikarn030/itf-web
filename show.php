@@ -26,11 +26,11 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM guestbook002');
 ?>
-<table class="center1" width="950" style="margin-left:auto;margin-right:auto;margin-top: 20px;">
+<table class="center1" width="900" style="margin-left:auto;margin-right:auto;margin-top: 20px;">
   <tr>
     <th width="150" style="color: #f0ffff; background-color: salmon;"><div align="center">Name</div></th>
     <th width="300" style="color: #f0ffff; background-color: lightcoral;"><div align="center">Comment</div></th>
-    <th width="300" style="color: #f0ffff; background-color: salmon;"><div align="center">Link</div></th>
+    <th width="250" style="color: #f0ffff; background-color: salmon;"><div align="center">Link</div></th>
     <th width="200" style="color: #f0ffff; background-color: lightcoral;"><div align="center">Action</div></th>
   </tr>
 <?php
@@ -43,7 +43,7 @@ while($Result = mysqli_fetch_array($res))
     <td style="background-color: #fabcb6"><?php echo $Result['Link'];?></td>
     <td style="background-color: #f8c6ce"><div align="center">
         <button type="submit" style="padding: 5%; background-color: tomato; border-width: 0cm; color:white; border-radius: 6px;"><a href="deletet.php?id=<?=$Result['id'];?>" style="color: white; text-decoration: none;"><strong>Delete</strong></a></button>
-        <button type="submit" style="padding: 5%; background-color: tomato; border-width: 0cm; color:white; border-radius: 6px;"><a href="deletet.php?id=<?=$Result['id'];?>">Edit</a></button></td>
+        <button type="submit" style="padding: 5%; background-color: tomato; border-width: 0cm; color:white; border-radius: 6px;"><a href="deletet.php?id=<?=$Result['id'];?>" style="color: white; text-decoration: none;"><strong>Edit/strong></a></button>
   </tr>
 <?php
 }
