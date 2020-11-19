@@ -58,7 +58,7 @@ while($Result = mysqli_fetch_array($res))
     <td style="background-color: #fabcb6"><?php echo $Result['Link'];?></td>
     <td style="background-color: #f8c6ce"><div align="center">
         <button type="submit" style="padding: 5%; background-color: tomato; border-width: 0cm; color:white; border-radius: 6px;"><a href="deletet.php?id=<?=$Result['id'];?>" style="color: white; text-decoration: none;"><strong>Delete</strong></a></button>
-        <button type="submit" style="padding: 5%; background-color: tomato; border-width: 0cm; color:white; border-radius: 6px;"><a href="formedit.html?id=<?=$Result['id'];?>" style="color: white; text-decoration: none;"><strong>Edit</strong></a></button>
+        <button type="submit" style="padding: 5%; background-color: tomato; border-width: 0cm; color:white; border-radius: 6px;"><a href="formedit.php?id=<?=$Result['id'];?>" style="color: white; text-decoration: none;"><strong>Edit</strong></a></button>
   </tr>
 <?php
 }
