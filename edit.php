@@ -14,7 +14,7 @@ $link = $_POST['link'];
 $id = $_POST['id'];
 
 //$sql = "UPDATE guestbook002 SET Name = $name, Comment = $comment, Link = $link WHERE id = $id;";//
-$sql = "INSERT INTO guestbook002 (Name , Comment , Link) VALUES ('$name', '$comment', '$link')";
+$sql = "INSERT INTO guestbook002 (Name , Comment , Link) VALUES ('$name', '$comment', '$id')";
 
 
 if (mysqli_query($conn, $sql)) {
