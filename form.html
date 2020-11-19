@@ -9,7 +9,7 @@
   }
   .form-style-5{
   max-width: 500px;
-  margin: 60px auto;
+  margin: 45px auto;
   padding: 20px;
   background: #3b5e69;
   border-radius: 12px;
@@ -17,9 +17,14 @@
   font-family: fantasy;
   font-size: 20px;
 }
+.center1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px}
 </style>
 <body>
-  <h1 style="padding: 5px 700px; color:rgb(236, 226, 207);">
+  <h1 class="center1" style="color:rgb(236, 226, 207); margin-top: 45px;">
     -FORM-
   </h1>
   <form class="form-style-5" action = "insert.php" method = "post" id="CommentForm" >
@@ -29,7 +34,8 @@
     <textarea rows="10" cols="66" name = "Comment" id="idComment" placeholder="Enter Comment"></textarea><br>
     Link:<br>
     <input type="text" name = "Link" id="idLink" placeholder="Enter Link" style="width: 484px; padding: 5px;"> <br><br>
-    <input type="submit" id="commentBtn" style="background-color: hsl(41, 47%, 80%); margin: 10px 212px; padding: 13px; border-radius: 8px; border-width: 0px; font-weight: bolder;">
+    <input type="submit" id="commentBtn" style="background-color: hsl(41, 47%, 80%); margin: 10px auto; padding: 13px; border-radius: 8px; border-width: 0px; font-weight: bolder; margin-left: 120px; cursor: pointer;">
+    <input type="button" onclick="document.location='show.php'" value="Cancle" style="cursor: pointer ;background-color: hsl(41, 47%, 80%); margin: 10px auto;margin-left: 100px; padding: 13px; border-radius: 8px; border-width: 0px; font-weight: bolder;">
   </form> 
 </body>
 </html>
