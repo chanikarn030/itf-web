@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+$id = $_GET['id'];
+?>
 <html>
 <head>
   <title>Edit Form</title>
@@ -28,7 +30,7 @@
     -EDIT FORM-
   </h1>
   <form class="form-style-5" action = "edit.php" method = "post" id="EditForm" >
-    <input type="hidden" name="id" id="id" value="<?php=$_GET['id'];?>">
+    <input type="hidden" name="id" id="id" value="<?php echo $id;?>">
     Name:<br>
     <input type="text" name = "Name" id="idName" placeholder="Enter Name" style="width: 484px; padding: 5px;"> <br>
     Comment:<br>
