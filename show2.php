@@ -65,7 +65,7 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
-<div align="center"><button type="button" style="cursor: pointer; margin-top: 23px; padding: 12px; border-width: 0cm; background-color: lightsalmon; color: white; border-radius: 12px;" onclick="document.location='form.html'"><strong>ADD</strong></button></div>
+<div align="center"><button type="button" style="cursor: pointer; margin-top: 23px; padding: 12px; border-width: 0cm; background-color: lightsalmon; color: white; border-radius: 12px;" onclick="document.location='form2.html'"><strong>ADD</strong></button></div>
 <?php
 mysqli_close($conn);
 ?>
