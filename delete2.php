@@ -11,7 +11,6 @@ $id = $_GET['id'];
 
 $sql = "DELETE FROM guestbook003 WHERE Id = $id";
 
-
 if (mysqli_query($conn, $sql)) {
     header('location: show2.php');
   } else {
