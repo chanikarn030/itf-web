@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Comment Form</title>
+</head>
+<style>
+  body{
+    background-color: cadetblue;
+  }
+  .form-style-5{
+  max-width: 500px;
+  margin: 45px auto;
+  padding: 20px;
+  background: #3b5e69;
+  border-radius: 12px;
+  color: white;
+  font-family: fantasy;
+  font-size: 20px;
+}
+.center1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px}
+</style>
+<body>
+  <h1 class="center1" style="color:rgb(236, 226, 207); margin-top: 45px;">
+    -FORM-
+  </h1>
+  <form class="form-style-5" action = "insert2.php" method = "post" id="CommentForm" >
+    Product:<br>
+    <input type="text" name = "product" id="idName" placeholder="Enter Product" style="width: 484px; padding: 5px;"> <br>
+    Price:<br>
+    <input type="text" name = "price" id="idName" placeholder="Enter Price" style="width: 484px; padding: 5px;"><br>
+    Amount:<br>
+    <input type="text" name = "amount" id="idLink" placeholder="Enter Amount" style="width: 484px; padding: 5px;"> <br><br>
+    <input type="submit" id="commentBtn" style="background-color: hsl(41, 47%, 80%); margin: 10px auto; padding: 13px; border-radius: 8px; border-width: 0px; font-weight: bolder; margin-left: 120px; cursor: pointer;">
+    <input type="button" onclick="document.location='show.php'" value="Cancle" style="cursor: pointer ;background-color: hsl(41, 47%, 80%); margin: 10px auto;margin-left: 100px; padding: 13px; border-radius: 8px; border-width: 0px; font-weight: bolder;">
+  </form> 
+</body>
+</html>
