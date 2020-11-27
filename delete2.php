@@ -1,4 +1,3 @@
-  
 <?php
 $conn = mysqli_init();
 mysqli_real_connect($conn, 'dataitf.mysql.database.azure.com', 'laize@dataitf', '08032545Pu', 'itflab', 3306);
@@ -11,6 +10,7 @@ $id = $_GET['id'];
 
 $sql = "DELETE FROM guestbook003 WHERE Id = $id";
 
+
 if (mysqli_query($conn, $sql)) {
     header('location: show2.php');
   } else {
@@ -18,4 +18,5 @@ if (mysqli_query($conn, $sql)) {
   }
   
 mysqli_close($conn);
-?> 
+echo "<a href=\"show2.php\">BACK</a>";
+?>
